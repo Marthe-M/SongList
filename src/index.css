@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(1, 20, 43);
+  color: rgb(231, 231, 231);
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.nav-bar--list {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0px;
+  border: 2px black solid;
+  background-color: rgb(88, 92, 104);
+}
+
+li {
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  background-color: rgb(88, 92, 104);
+}
+
+li:first-child {
+  background-color: rgb(36, 49, 85);
+}
+
+li a {
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: rgb(48, 82, 184);
+}
+
+li a:visited {
+  color: white;
+}
+
+input[type='text'] {
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+input[type='text']:focus {
+  background-color: rgb(163, 167, 179);
+}
+
+.song-title {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+select {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+select:focus {
+  background-color: rgb(163, 167, 179);
+}
+
+button {
+  background-color: rgb(67, 71, 83);
+  border: 2px black solid;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(48, 82, 184);
+}
