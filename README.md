@@ -1,3 +1,5 @@
+# Playlist
+
 ### Description
 A tool to keep track of your favorite songs
 
