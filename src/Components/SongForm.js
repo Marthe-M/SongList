@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { BsFillFileEarmarkMusicFill } from 'react-icons/bs'
 
 class SongForm extends Component {
   render () {
@@ -56,7 +57,9 @@ class SongForm extends Component {
                   </select>
                 </th>
                 <th scope='row'>
-                  <button type='submit'>Add new song!</button>
+                  <button type='submit'>
+                    Add new song! <BsFillFileEarmarkMusicFill />
+                  </button>
                 </th>
               </tr>
             </tbody>

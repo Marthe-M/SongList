@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import SongForm from './SongForm'
 import SongList from './SongList'
+import { RiDeleteBin5Fill } from 'react-icons/ri'
+import { ImSortAlphaAsc, ImSortAmountDesc } from 'react-icons/im'
 
 class SongOverview extends Component {
   constructor () {
@@ -171,18 +173,20 @@ class SongOverview extends Component {
             </tbody>
           </table>
           <button onClick={() => this.sortTitle(this.state.songs, 'title')}>
-            Sort list on title (A-Z)
+            Sort list on title <ImSortAlphaAsc />
           </button>
           <button onClick={() => this.sortArtist(this.state.songs, 'artist')}>
-            Sort list on artist name (A-Z)
+            Sort list on artist name <ImSortAlphaAsc />
           </button>
           <button onClick={() => this.sortRating(this.state.songs, 'rating')}>
-            Sort list on rating (High to low)
+            Sort list on rating <ImSortAmountDesc />
           </button>
           <button onClick={() => this.sortRating(this.state.songs, 'genre')}>
             Sort list on genre
           </button>
-          <button onClick={() => this.deleteList()}>Delete list</button>
+          <button onClick={() => this.deleteList()}>
+            Delete list <RiDeleteBin5Fill />
+          </button>
         </div>
       </div>
     )

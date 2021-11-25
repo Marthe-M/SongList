@@ -8,7 +8,6 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 function App () {
   return (
     <div className='container'>
-      <Header />
       <BrowserRouter>
         <ul className='nav-bar--list'>
           <li className='nav-bar--element'>
@@ -21,8 +20,11 @@ function App () {
             <Link to='/About'>About</Link>
           </li>
         </ul>
+
         <Switch>
           <Route path='/SongOverview'>
+            <Header />
+
             <SongOverview />
           </Route>
           <Route path='/Contact'>
@@ -32,6 +34,7 @@ function App () {
             <About />
           </Route>
           <Route path='/'>
+            <Header />
             <SongOverview />
           </Route>
         </Switch>

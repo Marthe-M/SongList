@@ -1,8 +1,13 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(1, 20, 43);
+  background-color: rgb(11, 26, 44);
   color: rgb(231, 231, 231);
-  font-size: 15px;
+  background-image: url("./Images/background.jpg");
+  font-size: 18px;
+}
+
+.header {
+  margin-bottom: 50px;
 }
 
 h1 {
@@ -14,8 +19,6 @@ h1 {
   list-style-type: none;
   display: flex;
   padding-left: 0px;
-  border: 2px black solid;
-  background-color: rgb(88, 92, 104);
 }
 
 li {
@@ -23,34 +26,36 @@ li {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-  background-color: rgb(88, 92, 104);
 }
 
 li:first-child {
-  background-color: rgb(36, 49, 85);
+  text-decoration: underline;
 }
 
 li a {
   text-decoration: none;
+  color: white;
 }
 
-li:hover {
-  background-color: rgb(48, 82, 184);
+li a:hover {
+  color: rgb(214, 175, 0);
 }
 
 li a:visited {
   color: white;
 }
 
-input[type='text'] {
+input[type="text"] {
   padding: 10px;
+  opacity: 80%;
   border: 0;
+  font-size: 16px;
   border-radius: 10px;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
-input[type='text']:focus {
-  background-color: rgb(163, 167, 179);
+input[type="text"]:focus {
+  background-color: rgba(218, 216, 216, 0.753);
 }
 
 .song-title {
@@ -62,24 +67,27 @@ select {
   width: 80%;
   padding: 10px;
   border-radius: 10px;
+  font-size: 16px;
+  opacity: 80%;
 }
 
 select:focus {
-  background-color: rgb(163, 167, 179);
+  background-color: rgba(211, 211, 211, 0.63);
 }
 
 button {
-  background-color: rgb(67, 71, 83);
+  background-color: rgba(231, 193, 20, 0.589);
   border: 2px black solid;
   color: white;
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
   margin: 10px;
   border-radius: 10px;
 }
 
 button:hover {
-  background-color: rgb(48, 82, 184);
+  background-color: rgba(214, 175, 0, 0.753);
+  cursor: pointer;
 }
